@@ -1,0 +1,17 @@
+{
+  "name": "sauerbraten-packet",
+  "version": "1.0.0",
+  "description": "Class for working with Sauerbraten network packets.",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "gulp"
+  },
+  "repository": "https://github.com/AngrySnout/sauerbraten-packet",
+  "author": "AngrySnout",
+  "license": "Zlib",
+  "devDependencies": {
+    "babel-preset-es2015": "^6.5.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2"
+  }
+}
