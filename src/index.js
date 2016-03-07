@@ -144,7 +144,8 @@ export class Packet {
 			this.buffer.writeUInt8((num>>24)&0xFF, this.offset+4);
 			this.offset += 5;
 		}
-    }
+ 		return this.offset-lastoffset;
+   }
 
     /**
      *  Read next string.
