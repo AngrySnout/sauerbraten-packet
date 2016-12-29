@@ -155,7 +155,7 @@ export class Packet {
     getString() {
 		var res = '';
 		while (this.offset < this.buffer.length && this.buffer[this.offset] !== 0) {
-			res += String.fromCharCode(this.getInt());
+			res += String.fromCharCode(this.getInt() & 0xFF);
 		}
 		this.offset++;
 		return cube2uni(res).replace(/\x00/g, "");
